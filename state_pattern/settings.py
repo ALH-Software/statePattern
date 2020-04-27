@@ -33,7 +33,6 @@ ALLOWED_HOSTS = ['statepattern.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
