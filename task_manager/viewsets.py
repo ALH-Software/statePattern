@@ -63,7 +63,7 @@ class TaskViewSet(viewsets.ModelViewSet):
         task = get_object_or_404(queryset, pk=pk)
         
         if request.method == 'POST':
-            if(task.next == -1):
+            if(task.state == 1):
                 task.next = request.data['next']
 
         task.save()
